@@ -34,6 +34,7 @@
       <guid>{{ .Permalink }}</guid>
       <description>{{ .Summary | html }}</description>
       <categories>{{ .Page.Params.Categories }}</categories>
+      <tags>{{ .Page.Params.Tags }}</tags>
     </item>
     {{ end }}
   </channel>
