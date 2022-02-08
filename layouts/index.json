@@ -11,7 +11,7 @@
     "author": { "name": "{{ .Site.Params.author }}" },
     {{ end }}
     "items": [
-    {{ range $i, $e := first 10 .Site.Pages }}
+    {{ range $i, $e := first 10 .Site.RegularPages }}
         {{ if $i }}, {{ end }}
             {
                 "title": "{{ .Title }}",
