@@ -14,6 +14,19 @@
     {{ else }}
     <h2>{{ .Site.Params.info }}</h2>
     {{ end }}
+  </div>
+  <div class="recent-posts">
+    <h3><center>Here are my recent posts 👇</center></h3>
+    <ul>
+    {{ range $i, $e := first 4 .Site.RegularPages }}
+      <li>
+        <span class="date">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
+        <a class="title" href="{{ .Params.ExternalLink | default .RelPermalink }}">{{ .Title }}</a>
+      </li>
+    {{- end -}}
+    </ul>
+  </div>
+  <div class="about">
     {{ with .Site.Params.social }}
     <ul>
       {{ range sort . "weight" }}
