@@ -2,9 +2,28 @@
   {{ .Title }} · {{ .Site.Title }}
 {{ end }}
 {{ define "content" }}
+  <style>
+      @media only screen and (min-width: 768px) {
+    .content {
+      padding-left: 6%;
+    }
+  }
+  </style>
+  <script src="//unpkg.com/heti/umd/heti-addon.min.js"></script>
+  <script>
+      const heti = new Heti('.heti');
+      heti.autoSpacing();
+  </script>
   <section class="container post">
-    <article>
+    <link rel="stylesheet" href="//unpkg.com/heti/umd/heti.min.css">
+    <article class="post-content heti">
       <header>
+          <style>
+            .heti {
+              /* max-width: 80%; */
+              line-height: 1.6em;
+            }
+          </style>
         <div class="post-title">
           <h1 class="title">
             <a class="title-link" href="{{ .Permalink | safeURL }}">
