@@ -2,6 +2,12 @@
   flex-direction: column;
 }
 
+@media only screen and (min-width: 800px) {
+  .recent-posts {
+    width: 1000px;
+  }
+}
+
 .content {
   flex: 1;
   display: flex;
