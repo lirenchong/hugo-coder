@@ -38,6 +38,19 @@
     color: $fg-color-dark;
   }
 
+b,
+em {
+  font-weight: 700;
+  color:rgb(48, 124, 246);
+}
+
+b,
+em strong {
+  font-weight: 700;
+  color:rgb(238, 96, 93);
+}
+
+
   // fix color schemes which do not explicitly set fg-color
   .highlight {
     pre {
