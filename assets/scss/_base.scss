@@ -134,6 +134,18 @@ strong {
   font-weight: 700;
 }
 
+b,
+em {
+  font-weight: 700;
+  color:rgb(48, 124, 246);
+}
+
+b,
+em strong {
+  font-weight: 700;
+  color:rgb(248, 57, 41);
+}
+
 .highlight>div,
 .highlight>pre {
   margin: 0 0 2rem;
