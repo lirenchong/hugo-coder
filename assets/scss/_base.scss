@@ -110,7 +110,7 @@ h6 {
     font-size: 1.6rem;
     line-height: 2rem;
   }
-  padding: 0 10px; border-left: 0.5px solid #303134;
+  padding: 0 10px; border-left: 1px solid #989798;
 }
 b,
 strong {
@@ -161,12 +161,23 @@ code {
   border-radius: 0.6rem;
   padding: 0.3rem 0.6rem;
 }
+blockquote:before {
+  display: inline-block;
+  content: "“";
+  font-size: 2em;
+  color: #989798;
+  margin-top: 10px;
+  font-family: Arial, serif;
+  line-height: 1em;
+  font-weight: 700;
+}
 blockquote {
   border-left: 2px solid $alt-bg-color;
   padding-left: 2rem;
   line-height: 2.2rem;
   font-weight: 400;
-  font-style: italic;
+  display: block;
+  background-color: $alt-bg-color;
 }
 th,
 td {
